@@ -1,0 +1,5 @@
+<div *ngIf="user">
+  <admin-dashboard *ngIf="user.role == 'admin'"></admin-dashboard>
+  <team-lead-dashboard *ngIf="user.role == 'team-lead'"></team-lead-dashboard>
+  <employee-dashboard *ngIf="user.role == 'developer'"></employee-dashboard>
+</div>

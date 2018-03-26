@@ -1,0 +1,14 @@
+<mat-tab-group class="visitor-tab-group">
+    <mat-tab label="Dashboard">
+      <div class="visitor-tab-content">
+        {{tasks |json}}
+
+        <button (click)="addTask()">Add Task</button>
+      </div>
+    </mat-tab>
+    <mat-tab label="Employees">
+      <div class="visitor-tab-content">
+        <employees></employees>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
